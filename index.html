@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CYBORG NEXUS — Experience the next generation of cybernetic intelligence, neural integration, and AI-powered evolution. The future of human-machine synergy.">
+    <meta name="keywords" content="cyborg, AI, neural interface, cybernetic intelligence, future technology, machine learning, quantum security">
+    <meta name="author" content="CYBORG NEXUS">
+    <meta name="theme-color" content="#050816">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CYBORG NEXUS — The Future is Human + Machine">
+    <meta property="og:description" content="Experience the next generation of cybernetic intelligence, neural integration, and AI-powered evolution.">
+    <meta property="og:type" content="website">
+
+    <title>CYBORG NEXUS — The Future is Human + Machine</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===========================
+         LOADING SCREEN
+    ============================ -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <span class="logo-icon">⬡</span>
+            CYBORG <span class="logo-highlight">NEXUS</span>
+        </div>
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-core"></div>
+        </div>
+        <div class="loading-text">Initializing Neural Interface...</div>
+    </div>
+
+    <!-- ===========================
+         MOUSE GLOW CURSOR
+    ============================ -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- ===========================
+         ANIMATED BACKGROUND GRID
+    ============================ -->
+    <div class="bg-grid"></div>
+
+
+    <!-- ===========================
+         SECTION 1: NAVIGATION BAR
+    ============================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">⬡</span>
+                CYBORG <span class="logo-highlight">NEXUS</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#technology" class="nav-link">Technology</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Join Button -->
+            <a href="#cta" class="join-btn">
+                <span class="btn-glow"></span>
+                Join Future
+            </a>
+
+            <!-- Mobile Hamburger Menu -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- ===========================
+         SECTION 2: HERO SECTION
+    ============================ -->
+    <section id="home" class="hero">
+        <!-- Particle Background Canvas -->
+        <canvas id="particles-canvas"></canvas>
+
+        <!-- Background Decorative Elements -->
+        <div class="hero-bg" id="heroBg">
+            <div class="gradient-circle gradient-circle-1"></div>
+            <div class="gradient-circle gradient-circle-2"></div>
+            <div class="gradient-circle gradient-circle-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Left: Content -->
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Next-Gen Cybernetic Platform
+                </div>
+                <h1 class="hero-title">
+                    THE FUTURE IS<br>
+                    <span class="gradient-text">HUMAN + MACHINE</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the next generation of cybernetic intelligence, 
+                    neural integration, and AI-powered evolution. Bridging the gap 
+                    between biological potential and digital transcendence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#technology" class="btn btn-primary">
+                        <span class="btn-content">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            Explore Technology
+                        </span>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span class="btn-content">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Watch Demo
+                        </span>
+                    </a>
+                </div>
+                <!-- Mini stats under hero -->
+                <div class="hero-mini-stats">
+                    <div class="mini-stat">
+                        <span class="mini-stat-number">100K+</span>
+                        <span class="mini-stat-label">Active Users</span>
+                    </div>
+                    <div class="mini-stat-divider"></div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-number">99.9%</span>
+                        <span class="mini-stat-label">Uptime</span>
+                    </div>
+                    <div class="mini-stat-divider"></div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-number">500+</span>
+                        <span class="mini-stat-label">Research Labs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Cyborg Image -->
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero-cyborg.png" alt="Futuristic cyborg illustration representing human-machine integration" loading="eager">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 3: FEATURES
+    ============================ -->
+    <section id="features" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title gradient-text">Advanced Capabilities</h2>
+                <p class="section-subtitle">Pushing the boundaries of human potential through cutting-edge cybernetic technology and artificial intelligence.</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature Card 1: AI Intelligence -->
+                <div class="feature-card" id="feature-ai" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-border-animation"></div>
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/>
+                            <path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/>
+                            <path d="M8.56 9.8a5.07 5.07 0 0 0-3.23 2.67 5 5 0 0 0 6.27 7.07"/>
+                            <path d="M15.44 9.8a5.07 5.07 0 0 1 3.23 2.67 5 5 0 0 1-6.27 7.07"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI Intelligence</h3>
+                    <p class="feature-description">
+                        Harness the power of advanced neural networks that learn, adapt, and evolve 
+                        alongside your cognitive processes. Our AI systems achieve 99.7% accuracy in 
+                        predictive modeling and real-time decision support.
+                    </p>
+                    <div class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2: Neural Interface -->
+                <div class="feature-card" id="feature-neural" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-border-animation"></div>
+                    <div class="feature-icon icon-purple">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12h2"/>
+                            <path d="M20 12h2"/>
+                            <path d="m6 12 6-8 6 8"/>
+                            <path d="m6 12 6 8 6-8"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Neural Interface</h3>
+                    <p class="feature-description">
+                        Direct brain-computer interfaces enabling seamless thought-to-action 
+                        communication. Experience latency under 0.3ms with our proprietary 
+                        neural bridge technology for unparalleled human-machine connectivity.
+                    </p>
+                    <div class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3: Quantum Security -->
+                <div class="feature-card" id="feature-security" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-border-animation"></div>
+                    <div class="feature-icon icon-pink">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quantum Security</h3>
+                    <p class="feature-description">
+                        Military-grade quantum encryption safeguards every neural connection 
+                        and data stream. Featuring post-quantum cryptographic protocols that 
+                        remain impervious to both classical and quantum computing attacks.
+                    </p>
+                    <div class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 4: TECHNOLOGY SHOWCASE
+    ============================ -->
+    <section id="technology" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Technology</span>
+                <h2 class="section-title gradient-text">Technology Showcase</h2>
+                <p class="section-subtitle">Explore the metrics that define our cybernetic excellence.</p>
+            </div>
+
+            <div class="tech-content">
+                <!-- Left: Tech Image -->
+                <div class="tech-image" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="tech-image-wrapper">
+                        <img src="assets/tech-interface.png" alt="Futuristic holographic interface dashboard showing neural network data" loading="lazy">
+                        <div class="tech-image-border"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Progress Bars -->
+                <div class="tech-stats" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="stat-bar" data-percent="98">
+                        <div class="stat-bar-header">
+                            <span class="stat-bar-label">Neural Connectivity</span>
+                            <span class="stat-bar-percent">98%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="--target-width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-bar" data-percent="95">
+                        <div class="stat-bar-header">
+                            <span class="stat-bar-label">AI Learning</span>
+                            <span class="stat-bar-percent">95%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill bar-fill-purple" style="--target-width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-bar" data-percent="99">
+                        <div class="stat-bar-header">
+                            <span class="stat-bar-label">Security</span>
+                            <span class="stat-bar-percent">99%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill bar-fill-pink" style="--target-width: 99%"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-bar" data-percent="97">
+                        <div class="stat-bar-header">
+                            <span class="stat-bar-label">Processing Speed</span>
+                            <span class="stat-bar-percent">97%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="--target-width: 97%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 5: STATISTICS
+    ============================ -->
+    <section id="stats" class="section section-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <span class="stat-number" data-target="100000" data-suffix="+">0</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/></svg>
+                    </div>
+                    <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                    <span class="stat-label">Research Labs</span>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <span class="stat-number" data-target="99.9" data-suffix="%" data-decimal="true">0</span>
+                    <span class="stat-label">Accuracy Rate</span>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <span class="stat-number" data-target="24" data-suffix="/7" data-nodecimal="true">0</span>
+                    <span class="stat-label">AI Assistance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 6: TIMELINE
+    ============================ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Roadmap</span>
+                <h2 class="section-title gradient-text">Evolution Timeline</h2>
+                <p class="section-subtitle">Tracing our path from breakthrough discovery to the singularity horizon.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item" id="timeline-2025" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3 class="timeline-title">AI Enhancement</h3>
+                        <p class="timeline-description">
+                            Launch of our first AI-augmented cognitive enhancement platform, 
+                            enabling real-time decision support and predictive analytics for 
+                            early adopters worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" id="timeline-2028" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2028</span>
+                        <h3 class="timeline-title">Neural Integration</h3>
+                        <p class="timeline-description">
+                            Breakthrough in non-invasive brain-computer interface technology. 
+                            Direct neural link established with sub-millisecond latency, 
+                            opening the door to thought-controlled computing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item" id="timeline-2032" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2032</span>
+                        <h3 class="timeline-title">Human-Machine Synchronization</h3>
+                        <p class="timeline-description">
+                            Full bidirectional communication between human consciousness and 
+                            AI systems achieved. Cybernetic enhancements become mainstream with 
+                            over 10 million active neural link users globally.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item" id="timeline-2040" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2040</span>
+                        <h3 class="timeline-title">Singularity Network</h3>
+                        <p class="timeline-description">
+                            The convergence point — a unified global neural network where human 
+                            and artificial intelligence merge into a collaborative super-consciousness, 
+                            transcending individual cognitive limitations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline center line -->
+                <div class="timeline-line"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 7: TESTIMONIALS
+    ============================ -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title gradient-text">What Our Users Say</h2>
+                <p class="section-subtitle">Hear from pioneers who are already living the future.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" id="testimonial-1" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-quote-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                            <path d="M11.3 2.5C6.4 4.2 2.9 8.2 2.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3C7.5 6.1 10.2 4 13 3.2L11.3 2.5zM22.3 2.5C17.4 4.2 13.9 8.2 13.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3.9-3.2 3.6-5.3 6.4-6.1L22.3 2.5z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "The neural interface has completely transformed how I interact with technology. 
+                        It's like having a supercomputer wired directly into my thoughts. The latency 
+                        is imperceptible — pure magic."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="assets/avatar-1.png" alt="Dr. Elena Vasquez" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Dr. Elena Vasquez</span>
+                            <span class="testimonial-position">Chief Neural Scientist, NeuroLink Corp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" id="testimonial-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="testimonial-quote-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                            <path d="M11.3 2.5C6.4 4.2 2.9 8.2 2.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3C7.5 6.1 10.2 4 13 3.2L11.3 2.5zM22.3 2.5C17.4 4.2 13.9 8.2 13.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3.9-3.2 3.6-5.3 6.4-6.1L22.3 2.5z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Quantum security protocols from CYBORG NEXUS are light-years ahead of 
+                        anything else on the market. We've deployed them across all our research 
+                        facilities with zero breaches in 18 months."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="assets/avatar-2.png" alt="Marcus Chen" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Marcus Chen</span>
+                            <span class="testimonial-position">Head of Cybersecurity, Axiom Defense</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" id="testimonial-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-quote-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                            <path d="M11.3 2.5C6.4 4.2 2.9 8.2 2.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3C7.5 6.1 10.2 4 13 3.2L11.3 2.5zM22.3 2.5C17.4 4.2 13.9 8.2 13.9 13c0 3.3 2.4 6 5.4 6 2.8 0 5-2.2 5-5s-2.2-5-5-5c-.6 0-1.2.1-1.7.3.9-3.2 3.6-5.3 6.4-6.1L22.3 2.5z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "As a transhumanist researcher, I've been waiting for this technology my entire 
+                        career. CYBORG NEXUS delivers on the promise of true human-machine synergy. 
+                        The AI learning algorithms are phenomenal."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="assets/avatar-3.png" alt="Sage Nakamura" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Sage Nakamura</span>
+                            <span class="testimonial-position">Director of Transhumanism Research, Prism Labs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 8: CALL TO ACTION
+    ============================ -->
+    <section id="cta" class="section section-cta">
+        <div class="cta-bg-animation"></div>
+        <div class="container cta-container">
+            <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
+                <h2 class="cta-title">READY TO <span class="gradient-text">EVOLVE</span>?</h2>
+                <p class="cta-subtitle">
+                    The future begins today. Join thousands of pioneers who are already 
+                    augmenting their potential with CYBORG NEXUS technology.
+                </p>
+                <a href="#contact" class="btn cta-btn">
+                    <span class="btn-content">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        Become a Cyborg
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+         SECTION 9: FOOTER
+    ============================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Logo & Description -->
+                <div class="footer-brand" data-aos="fade-up">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">⬡</span>
+                        CYBORG <span class="logo-highlight">NEXUS</span>
+                    </a>
+                    <p class="footer-description">
+                        Pioneering the future of human-machine integration through 
+                        advanced AI, neural interfaces, and quantum-secured networks.
+                    </p>
+                    <div class="social-links">
+                        <!-- GitHub -->
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <!-- Twitter/X -->
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Resources -->
+                <div class="footer-links-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact -->
+                <div class="footer-links-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@cyborgnexus.io">hello@cyborgnexus.io</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Press Inquiries</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 CYBORG NEXUS. All rights reserved. Built for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic',
+            offset: 80
+        });
+    </script>
+</body>
+</html>
